@@ -1,0 +1,228 @@
+/*=====================================================================FONT========================================================================*/
+
+@font-face {
+  font-family: ARCADECLASSIC;
+  src: url(ARCADECLASSIC.woff);
+}
+
+/*===================================================================BACKGROUND====================================================================*/
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  min-width: 960px;
+  background-image: url(https://user-images.githubusercontent.com/111238515/196523200-dd3b8ef3-0554-4db0-8264-771da06b7130.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: ARCADECLASSIC;
+  overflow: hidden;
+}
+
+/*======================================================================CLASS======================================================================*/
+
+.pokeButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/*========================================================================ID=======================================================================*/
+
+#leftSide {
+  max-width: 50%;
+  height: 100%;
+}
+
+#bottomLeft {
+  margin-left: 8%;
+  margin-right: 11%;
+  margin-top: 140px;
+}
+
+#goodra {
+  padding-left: 10%;
+  padding-top: 6px;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 5%;
+}
+
+#rightSide {
+  min-width: 50%;
+}
+
+#topRight {
+  padding-top: 2.25px;
+  padding-left: 11.5%;
+  text-align: center;
+}
+
+#dexter {
+  padding-left: 40%;
+}
+
+#bottomRight {
+  margin-top: 42px;
+  margin-left: 15%;
+  margin-right: 10%;
+  padding-left: 1%;
+}
+
+#pokedexSprites {
+  height: 596px;
+  width: 99%;
+  overflow: auto;
+}
+
+#refresh {
+  width: 155px;
+  height: 105px;
+  border-radius: 50%;
+  padding-top: 31px;
+  padding-left: 70px;
+  background-color: transparent;
+}
+
+/*======================================================================RULE 34====================================================================*/
+
+#rule34 {
+  border-radius: 60px;
+  padding: 13px 13px;
+  width: 110px;
+  height: 50px;
+  -webkit-animation: glowing 1300ms infinite;
+  -moz-animation: glowing 1300ms infinite;
+  -o-animation: glowing 1300ms infinite;
+  animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #ff0000;
+    box-shadow: 0 0 5px #ff0000;
+  }
+  50%{
+    background-color: #ff0000;
+    box-shadow: 0 0 20px #ff0000;
+  }
+  100%{
+    background-color: #ff0000;
+    box-shadow:0 0 5px  #ff0000;
+  }
+}
+
+/*==============================================================POKEDEX SCROLLBAR==================================================================*/
+
+#pokedexSprites::-webkit-scrollbar {
+  width: 40px;
+}
+
+#pokedexSprites::-webkit-scrollbar-track {
+  background: rgba(5, 143, 5, 0.158);
+}
+
+#pokedexSprites::-webkit-scrollbar-thumb {
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(222, 3, 3);
+}
+
+#pokedexSprites::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 1, 1);
+}
+
+/*================================================================MOVES SCROLLBAR==================================================================*/
+
+#moves::-webkit-scrollbar {
+  width: 15px;
+}
+
+#moves::-webkit-scrollbar-track {
+  background: rgba(124, 124, 124, 0.158);
+}
+
+#moves::-webkit-scrollbar-thumb {
+  border-radius: 30%;
+  background: rgb(222, 3, 3);
+}
+
+#moves::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 1, 1);
+}
+
+/*=================================================================AUDIO PLAYER=======================================================================*/
+
+.material-icons {
+  font-size: 28px;
+  color: #6fff6a;
+}
+
+#aWrap {
+  font-family: ARCADECLASSIC;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-left: 5%;
+  border-radius: 10px;
+  background: transparent;
+}
+
+#aPlay {
+  padding: 0;
+  margin: 0;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+#aCron {
+  font-size: 18px;
+  color: #19ff04;
+  margin: 0 10px;
+}
+
+#aWrap input[type="range"] {
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 75px;
+  padding: 0;
+  margin: 0;
+  background: 0;
+}
+#aWrap input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+}
+
+#aWrap input[type=range]::-webkit-slider-runnable-track {
+  background: transparent;
+}
+#aWrap input[type=range]::-moz-range-track {
+  background: transparent;
+}
+
+#aWrap input[type=range]::-webkit-slider-thumb {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 0;
+  background: rgb(41, 248, 0);
+}
+#aWrap input[type=range]::-moz-range-thumb {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 0;
+  background: rgb(44, 252, 2);
+}
+
+#aVolIco {
+  margin: 0 10px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DEXTER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+
+
+<body>
+
+    <div id="leftSide" class="col">
+
+        <div id="topLeft" class="row">
+            <div id="refresh">
+                <input type="button" id="refresh" onclick="window.location.reload();"></button>
+            </div>
+        </div>
+
+        <div id="bottomLeft" class="row">
+            <div id="pokemonOfTheDay" class="row"></div>
+            <div id="POD_title" class="row" style="text-align: center;">
+                <h1><u>POKEMON OF THE DAY</u></h1>
+            </div>
+            <div id="pokemonOfTheDayName" class="row">
+                <h1>NAME GOES HERE</h1>
+            </div>
+            <div id="pokemonOfTheDayPic" class="row">
+                <h1>IMAGE GOES HERE</h1>
+            </div>
+            <div id="search-bar" class="row">
+                <div id="goodra" class="col-4">
+                    <img src="https://user-images.githubusercontent.com/110724575/196528974-9f016a9d-3734-42ea-a1c9-879ba0ee1f29.png"
+                        width="200" height="100">
+                </div>
+                <div id="input-field" class="col-8">
+                    <input type="text" class="search-bar" placeholder="SEARCH" style="width: 400px; text-indent: 10px;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="rightSide" class="col">
+
+        <div id="topRight" class="row">
+            <div id="rule34" class="col-5">
+                <input type="button" onclick="parent.open('https://www.you-need-jesus.com/index.html')" value="RULE 34" style="border: none; background-color: #ff0000;">
+            </div>
+            <div id="dexter" class="col-7">
+                <img src="https://iili.io/tyGQeI.png" width="300" height="100" alt="DEXTER">
+            </div>
+
+            <!-- OPEN AUDIO -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <div id="aWrap">
+            <button id="aPlay" disabled><span id="aPlayIco" class="material-icons">
+                play_arrow
+            </span></button>   
+            <div id="aCron">
+                <span id="aNow"></span> / <span id="aTime"></span>
+            </div>  
+            <input id= "aSeek" type="range" min="0" value="0" step="1" disabled/>
+            <span id="aVolIco" class="material-icons">volume_up</span>
+            <input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" disabled/>
+            </div>
+            <!-- CLOSE AUDIO -->
+
+        </div>
+
+        <div id="bottomRight" class="row">
+            <div id="pokedexSprites"></div>
+        </div>
+
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+</html>
